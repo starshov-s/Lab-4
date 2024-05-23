@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+}
+
+.head1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table.table1 {
+  width: 150mm;
+  margin: 20px;
+  background-color: #ffffff;
+  brder-collapse: collapse;
+  border-width: 1.5px;
+  border-color: #808080;
+  border-style: solid;
+  color: #000000;
+}
+
+table.table1 td,
+table.table1 th {
+  border-width: 2px;
+  border-color: #808080;
+  border-style: solid;
+  padding: 0.5mm;
+}
+
+table.table1 thead {
+  background-color: #ffffff;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border: none;
+  margin: 1.5px;
+}
+
+input[type="radio"] {
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 7px;
+  height: 7px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+select {
+  width: 100px;
+  background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+  position: relative;
+}
+
+select:hover {
+  background-color: #f0f0f0;
+}
+
+label1 {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 3px;
+  height: 6px;
+  border-bottom: 2px solid #333;
+  border-right: 2px solid #333;
+  visibility: hidden;
+}
+
+input[type="checkbox"]:checked::before {
+  visibility: visible;
+}
+
+textarea#instructions {
+  width: 550px;
+  height: 75px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-image: linear-gradient(to bottom, #dcdcdc, #f5f5f5);
+}
+
+.head4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#result {
+  margin-top: 10px;
+  text-align: center;
+  padding-top: 10px;
+}

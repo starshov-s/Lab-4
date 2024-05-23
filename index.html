@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lab_#4</title>
+  <link rel="stylesheet" type="text/css" href="lab4.css">
+  <meta charset="UTF-8">
+  <script src="lab4.js"></script>
+</head>
+
+<body>
+  <div class="head1">
+    <h1>Старшов Сергій ІК-201</h1>
+  </div>
+  <div class="head2">
+    <h2>Лабораторна робота №4</h2>
+  </div>
+  <div class="head3">
+    <h3>Завдання №1</h3>
+  </div>
+  <div class="table">
+    <table class="table1">
+      <tbody>
+        <tr>
+          <td colspan="3" style="text-align: center;"><b>Pizza Shop 2.0</b></td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td colspan="2"><input type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td>Pizza Topping</td>
+          <td colspan="2">
+            <input type="radio" name="topping" value="variant1">
+            <label for="variant1">Supreme</label><br>
+            <input type="radio" name="topping" value="variant2">
+            <label for="variant2">Vegetarian</label><br>
+            <input type="radio" name="topping" value="variant3">
+            <label for="variant3">Hawaiian</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Pizza Sauce</td>
+          <td>
+            <select>
+              <option value="Tomato">Tomato</option>
+              <option value="Pesto">Pesto</option>
+              <option value="White">White</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Optional Extras</td>
+          <td colspan="2">
+            <input type="checkbox" id="extra_cheese" name="extra_cheese" value="extra_cheese">
+            <label for="extra_cheese">Extra Cheese</label>
+            <input type="checkbox" id="gluten_free_base" name="gluten_free_base" value="gluten_free_base">
+            <label for="gluten_free_base">Gluten Free Base</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">Delivery Instructions:
+            <textarea id="instructions" name="instructions" required></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <button type="button" onclick="addOrder()">Send my Order</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="head4">
+    <h3>Завдання №2</h3>
+  </div>
+    <div class="text">
+      <p>Містить слова: html, css</p>
+    </div>
+  <div class="word">
+    <form onsubmit="event.preventDefault(); searchWord();">
+      <input type="text" id="wordInput" />
+      <button type="button" onclick="searchWord()">Пошук</button>
+    </form>
+  </div>
+  <div id="result"></div>
+</body>
+
+</html>
